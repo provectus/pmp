@@ -1,0 +1,19 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/lblokhin/Projects/proj-mlops-demo/MLOpsPlatform/pmp/target/scala-3.2.1/pmp_3-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/lblokhin/Projects/proj-mlops-demo/MLOpsPlatform/pmp/target/scala-3.2.1/classes/org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/provectus[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/lblokhin/Projects/proj-mlops-demo/MLOpsPlatform/pmp/target/scala-3.2.1/classes/org/provectus[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/provectus/pmp[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/lblokhin/Projects/proj-mlops-demo/MLOpsPlatform/pmp/target/scala-3.2.1/classes/org/provectus/pmp[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/provectus/pmp/main$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/lblokhin/Projects/proj-mlops-demo/MLOpsPlatform/pmp/target/scala-3.2.1/classes/org/provectus/pmp/main$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/provectus/pmp/main$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/lblokhin/Projects/proj-mlops-demo/MLOpsPlatform/pmp/target/scala-3.2.1/classes/org/provectus/pmp/main$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/provectus/pmp/main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/lblokhin/Projects/proj-mlops-demo/MLOpsPlatform/pmp/target/scala-3.2.1/classes/org/provectus/pmp/main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/provectus/pmp/main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/lblokhin/Projects/proj-mlops-demo/MLOpsPlatform/pmp/target/scala-3.2.1/classes/org/provectus/pmp/main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/provectus/pmp/main$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/lblokhin/Projects/proj-mlops-demo/MLOpsPlatform/pmp/target/scala-3.2.1/classes/org/provectus/pmp/main$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
