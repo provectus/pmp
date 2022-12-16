@@ -2,6 +2,7 @@ from pmp.decorators import *
 import logging
 import pandas as pd
 from sagemaker.sklearn import SKLearn
+from sklearn.model_selection import train_test_split
 
 from sagemaker.processing import (
     FrameworkProcessor,
@@ -68,6 +69,17 @@ def read_data_csv(fn, header=None):
         index_col=ID_COLUMN,
     )
 
+def split_dataset(data_df: pd.DataFrame, label_df: pd.DataFrame, train_part):
+    (
+        train_data_df,
+        test_data_df,
+        train_label_df,
+        test_label_df,
+    ) = train_test_split(
+        data_df, label_df, test_size=1 - train_part, shuffle=True
+    )
+    return train_data_df, train_label_df, test_data_df, test_label_df
+
 def create_processor(sagemaker_session, config) -> FrameworkProcessor:
     return FrameworkProcessor(
         estimator_cls=SKLearn,
@@ -80,13 +92,13 @@ def create_processor(sagemaker_session, config) -> FrameworkProcessor:
     )
 
 
-@with_args( arg('input_data_path', type_hint=str),
-            arg('input_label_path', type_hint=str),
-            arg('output_train_dataset_data', type_hint=str),
-            arg('output_train_dataset_labels', type_hint=str),
-            arg('output_test_dataset_data', type_hint=str),
-            arg('output_test_dataset_labels', type_hint=str),
-            arg('train_part', type_hint=float, default=0.8))
+@with_inputs( arg('input_data_path', type_hint=str),
+              arg('input_label_path', type_hint=str) )
+@with_outputs( arg('output_train_dataset_data', type_hint=str),
+               arg('output_train_dataset_labels', type_hint=str),
+               arg('output_test_dataset_data', type_hint=str),
+               arg('output_test_dataset_labels', type_hint=str) )
+@with_parameters( arg('train_part', type_hint=float, default=0.8) )
 @on_framework_processor(create_processor)
 def first_step_split_example(
                         input_data_path,
